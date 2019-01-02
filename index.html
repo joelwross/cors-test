@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CORS Tester</title>
+
+  <!-- load bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+</head>
+<body class="container">
+
+	<h1>CORS Tester</h1>
+
+	<p>This page will help you test if an API endpoint properly supports CORS requests. This is designed to let you check if a failed <code>fetch()</code> request is because of a problem with the API or with your own requesting code.</p>
+
+	<p>Enter the URI you wish to query below and hit "Request". This page will send a <code>GET</code> request to that URI and report if it was successful or not.</p> 
+
+	<form class="mb-3">
+		<input type="text" id="uriInput" class="form-control mb-2" placeholder="Enter URI here...">
+		<button type="submit" class="btn btn-primary">Search!</button>
+	</form>
+
+	<div id="result" class="alert" role="alert">
+	</div>
+
+	<!-- load scripts -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="js/index.js"></script>
+</body>
+</html>
